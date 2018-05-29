@@ -292,7 +292,6 @@ public class Judge_Do {
 		}
 		for (Future<JSONObject> future:results)
 			try {
-				System.out.println("rrr"+future.get().toString());
 				r.put(future.get());
 			}catch (Exception e){
 				System.out.println(e);
